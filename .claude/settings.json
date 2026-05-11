@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit -m ' *)",
+      "Bash(curl -s \"https://api.telegram.org/bot8656874151:AAFfijxRrWg8NJ_WpPNWjIM3zvLh8HAeEt0/getWebhookInfo\")",
+      "Bash(curl -s -X POST \"https://api.telegram.org/bot8656874151:AAFfijxRrWg8NJ_WpPNWjIM3zvLh8HAeEt0/setWebhook\" -H \"Content-Type: application/json\" -d '{\"url\":\"https://haus-street.onrender.com/telegram-webhook\",\"allowed_updates\":[\"message\"]}')",
+      "Bash(git commit -m 'Fix webhook URL fallback to hardcoded Render URL *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://haus-street.onrender.com/api/products)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" -X POST https://haus-street.onrender.com/telegram-webhook -H \"Content-Type: application/json\" -d '{}')",
+      "Read(//c/Users/user/.claude/projects/c--Users-user-OneDrive-Documents-Haus-street/memory/**)",
+      "Read(//c/Users/user/.claude/projects/c--Users-user-OneDrive-Documents-Haus-street/**)",
+      "Bash(git commit -m 'Add reply-to-notification shortcut for tracking update *)",
+      "Bash(curl -s -X GET \"https://api.render.com/v1/services?name=haus-street&limit=1\" -H \"Authorization: Bearer rnd_3QZ4x3RQBmqKSVpTnpGeo38icVRP\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d[0]['service']['id'] if d else 'not found'\\)\")",
+      "Bash(curl -s -X POST \"https://api.render.com/v1/services/srv-d7uabodckfvc73eqeh60/deploys\" -H \"Authorization: Bearer rnd_3QZ4x3RQBmqKSVpTnpGeo38icVRP\" -H \"Content-Type: application/json\" -d '{\"clearCache\":\"do_not_clear\"}')",
+      "Bash(curl -s \"https://api.render.com/v1/services/srv-d7uabodckfvc73eqeh60/deploys/dep-d7ubtpgsfn5c73fi9il0\" -H \"Authorization: Bearer rnd_3QZ4x3RQBmqKSVpTnpGeo38icVRP\")",
+      "Bash(git commit -m 'Add Telegram inline keyboard buttons for order tracking *)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('id'\\), d.get\\('status'\\)\\)\")",
+      "Bash(curl -s \"https://api.render.com/v1/services/srv-d7uabodckfvc73eqeh60/deploys/dep-d7uc3q0sfn5c73fic43g\" -H \"Authorization: Bearer rnd_3QZ4x3RQBmqKSVpTnpGeo38icVRP\")",
+      "Bash(git commit -m 'Translate customer UI to English, add chat FAB delay, update AI prompt *)",
+      "Bash(curl -s \"https://api.render.com/v1/services/srv-d7uabodckfvc73eqeh60/deploys/dep-d7ucl6l7vvec7397dtsg\" -H \"Authorization: Bearer rnd_3QZ4x3RQBmqKSVpTnpGeo38icVRP\")",
+      "Bash(git commit -m 'Add admin-editable FAQ knowledge base for AI chat *)",
+      "Bash(curl -s \"https://api.render.com/v1/services/srv-d7uabodckfvc73eqeh60/deploys/dep-d7ucrnrrjlhs73ctf1h0\" -H \"Authorization: Bearer rnd_3QZ4x3RQBmqKSVpTnpGeo38icVRP\")",
+      "Bash(git commit -m 'Add AI chat log viewer in admin dashboard *)",
+      "Bash(curl -s \"https://api.render.com/v1/services/srv-d7uabodckfvc73eqeh60/deploys/dep-d7ud16gg4nts73brvarg\" -H \"Authorization: Bearer rnd_3QZ4x3RQBmqKSVpTnpGeo38icVRP\")",
+      "Bash(curl -s -X POST \"https://api.render.com/v1/services/srv-d7uabodckfvc73eqeh60/deploys\" -H \"Authorization: Bearer rnd_kNKHBKkQLkBHhFMOsHkPFCOlMuqj\" -H \"Content-Type: application/json\" -d \"{}\")",
+      "Bash(curl -s -X POST \"https://api.render.com/v1/services/srv-d7uabodckfvc73eqeh60/deploys\" -H \"Authorization: Bearer rnd_kOSjjSS7f8W13CHKnvPkVCKkHDkH\" -H \"Content-Type: application/json\" -d \"{}\")",
+      "Bash(git commit *)",
+      "Bash(curl -s \"https://api.render.com/v1/services/srv-d7uabodckfvc73eqeh60/deploys?limit=1\" -H \"Authorization: Bearer rnd_kOSjjSS7f8W13CHKnvPkVCKkHDkH\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\)[0]; print\\(d['status'], d['commit']['message'][:50]\\)\")",
+      "Bash(git checkout *)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\user\\.claude\\projects\\c--Users-user-OneDrive-Documents-Haus-street\\memory"
+    ]
+  }
+}
